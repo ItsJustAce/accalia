@@ -101,12 +101,27 @@ body {
 
 .card {
     background-color: #c32454;
-    padding: 6px;
-    margin: 6px;
+    padding: 12px;
+    margin: 12px;
 }
 
 .post a:link, .post a:visited {
     color: white;
+}
+
+.post {
+    margin: auto;
+    filter: drop-shadow(0px 0px);
+    transform: translate(0px, 0px);
+    transition: transform 0.1s, filter 0.1s;
+
+}
+
+.post:hover {
+    filter: drop-shadow(6px 6px);
+
+    transform: translate(-6px, -6px);
+    transition: transform 0.1s, filter 0.1s;
 }
 
 .small {

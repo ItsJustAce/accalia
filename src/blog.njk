@@ -4,13 +4,13 @@ layout: layout.njk
 ---
 <h1> blog </h1>
 <p>posts and thoughts and stuff</p>
-<h2>recently posted...</h2>
-{%- for post in collections.posts -%}
+<h2>posts...</h2>
+{%- for post in collections.posts | reverse -%}
     <div class="post">
         <a href={{ post.url }}>
                 <div class="card">
                 <h2>{{ post.data.title }}</h2>
-                <p class="small"> {{ post.data.date }} // {{ post.data.tags }}</p>
+                <p class="small"> {{ post.data.date | date }} // {{ post.data.tags }}</p>
                 {{ post.data.description }}
             </div>
         </a>
