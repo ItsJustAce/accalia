@@ -1,0 +1,18 @@
+---
+title: blog
+layout: layout.njk
+---
+<h1> blog </h1>
+<p>posts and thoughts and stuff</p>
+<h2>recently posted...</h2>
+{%- for post in collections.posts -%}
+    <div class="post">
+        <a href={{ post.url }}>
+                <div class="card">
+                <h2>{{ post.data.title }}</h2>
+                <p class="small"> {{ post.data.date }} // {{ post.data.tags }}</p>
+                {{ post.data.description }}
+            </div>
+        </a>
+    </div>
+{%- endfor -%}

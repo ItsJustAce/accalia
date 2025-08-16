@@ -9,10 +9,14 @@ module.exports = function (eleventyConfig) {
   // Passthrough copy for elements.css
   eleventyConfig.addPassthroughCopy("src/elements.css");
   eleventyConfig.addPassthroughCopy("static");
-  eleventyConfig.addCollection("updates", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/updates/*.md").sort((a, b) => {
-      return b.date - a.date;
-    });
+  // eleventyConfig.addCollection("updates", function (collectionApi) {
+  //   return collectionApi.getFilteredByGlob("src/updates/*.md").sort((a, b) => {
+  //     return b.date - a.date;
+  //   });
+  // });
+
+  eleventyConfig.addCollection("posts", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/posts/*.md");
   });
 
   return {

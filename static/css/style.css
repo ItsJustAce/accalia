@@ -105,6 +105,10 @@ body {
     margin: 6px;
 }
 
+.post a:link, .post a:visited {
+    color: white;
+}
+
 .small {
     font-size: 0.8em;
 }
