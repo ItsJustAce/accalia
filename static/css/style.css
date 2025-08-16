@@ -1,0 +1,138 @@
+#main {
+    flex-direction: column;
+    background-color: #3e3546;
+    gap: 24px;
+    justify-content: space-between;
+    display: flex;
+}
+
+main > div {
+    padding: 12px;
+    flex: 1 1 auto; /* fill available height */
+    flex-direction: column
+    display: flex;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+aside {
+    grid-area: aside;
+    flex-direction: column;
+    display: flex;
+    overflow-y: auto;
+    align-items: end;
+    position: sticky;
+    top: 0;
+    height: 100dvh;
+    padding: 12px 0;
+    flex-basis: 25%;
+    margin: 10px;
+}
+
+aside nav {
+    color: #eaaded;
+    font-weight: bolder;
+    z-index: 99;
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 12px;
+    overflow-x: hidden;
+}
+
+a:link,
+a:visited {
+    color: #ed8099;
+    text-decoration: none;
+}
+
+aside nav a:hover {
+    color: lightblue;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: #c32454;
+    max-width: 1000px;
+    min-height: 100dvh;
+    display: flex;
+}
+
+.container > main {
+    border: 2px dashed white;
+    width: 100%;
+    min-width: 0;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+body {
+    background-color: #2e222f;
+    background-image:
+        url("/static/images/checkertranslucent.gif"),
+        url("/static/images/deoxys.png");
+    background-blend-mode: overlay;
+    font-family: "Commit Mono", monospace;
+    color: #c7dcd0;
+    background-attachment: fixed;
+}
+
+.footer {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 1000px;
+    background-color: #3e3546;
+    height: 25px;
+
+}
+
+.footer p {
+    padding: 1px;
+}
+
+#systems {
+    display: grid;
+    gap: 6px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+    background-color: #c32454;
+    padding: 6px;
+    margin: 6px;
+}
+
+.small {
+    font-size: 0.8em;
+}
+
+#nav li {
+    list-style-type: none;
+}
+
+#name {
+    text-shadow: 8px 8px 10px black;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#buttons {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    flex-grow: 1;
+    margin-top: auto;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;  /* make the container full viewport height */
+}
+
+.sl {
+    margin-left: 1.5em;
+}

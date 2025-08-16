@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/static/images/favi.ico">
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+    <script src="https://kit.fontawesome.com/47ad3661fc.js" crossorigin="anonymous"></script>
+    <script src="/static/js/splash.js"></script>
+
+  </head>
+  <body>
+    <img src="/static/images/site logo 25.png" style="position: relative; transform: translateX(-50%); left: 50%; width: 500px; filter: drop-shadow(8px 8px 2px black);">
+    <br>
+    <img src="/static/images/hai.gif" style="position: relative; transform: translateX(-50%); left: 50%; width: 200px; filter: drop-shadow(8px 8px 2px black);"">
+    <div class="container">
+        <aside>
+            <nav>
+            <h1 id="name"><i>accalia.dev</i></h1>
+            <div id="splash" style="font-weight: bold; font-size: 1rem;">
+                Loading splash...
+            </div>
+
+            <div id="nav">
+                <li><a href="/about/"><i class="fa-solid fa-address-card"></i> about</a></li>
+                <li><a href="https://ace.atabook.org/"><i class="fa-solid fa-pen-to-square"></i> guestbook</a></li>
+                <li><a href="/"><i class="fa-solid fa-house"></i> home</a></li>
+                <li><a href="/links/"><i class="fa-solid fa-link"></i> links</a></li>
+                <li class="sl"><a href="/buttons/"><i class="fa-solid fa-arrow-up-right-from-square"></i> buttons</a></li>
+                <li><a href="/todo/"><i class="fa-solid fa-list-check"></i> to do</a></li>
+                <li><a href="/updates/"><i class="fa-solid fa-file-pen"></i> updates</a></li>
+            </div>
+            <detail>
+                <summary><h3>logs n stuff</h3></summary>
+                <p>status cafe</p>
+                <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=aace" defer></script>
+                <p>piclog</p>
+                <a href="https://piclog.blue/profile.php?id=1098"><img src="https://piclog.blue/latest.php?id=1098" style="width: 200px;"></a>
+                <p>last listened</p>
+                <script src="https://recentfm.rknight.me/now.js?u=justace0"></script>
+                <p class="small"><a href="/static/images/chart.png">last 365 days chart</a></p>
+
+            </detail>
+            </nav>
+        </aside>
+        <main id="main">
+            <div class="content">
+            {{ content | safe }}
+            </div>
+        </main>
+    </div>
+    <div class="footer">
+        <main id="main">
+            <p>literally zero copyright ace/accalia/boiled kettle/retraace/justace/itsjustace/joe sugg stan 2k14 <br><i>built with 11ty and hosted on nekoweb</i></p>
+        </main>
+  </body>
+</html>

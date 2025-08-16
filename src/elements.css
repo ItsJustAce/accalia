@@ -1,0 +1,63 @@
+/*
+    Don't use this file to edit your site style! Create a different CSS file for that.
+    This file defines how custom elements (like sitebox) will look like.
+    Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion!
+*/
+
+/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
+.site-box {
+  text-align: lrft;
+  /*background-image: url("https://aace.nekoweb.org/accalia.dev/img/fishies.png"); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+  color: #ff0044;
+  background-color: #2e222f;
+  font-size: 12px;
+  font-family: Monospace;
+    background-image:
+        url("https://aace.nekoweb.org/accalia.dev/static/images/checkertranslucent.gif"),
+        url("https://aace.nekoweb.org/accalia.dev/static/images/deoxys.png");
+    background-blend-mode: overlay;
+  background-repeat: repeat;
+  cursor: url('https://aace.nekoweb.org/accalia.dev/static/images/pointer.png'), auto;
+
+
+}
+
+
+.site-box::after {
+  content: url("https://aace.nekoweb.org/accalia.dev/static/images/hai.gif");
+  filter: drop-shadow(4px 4px black);
+  position: absolute;
+  top: 160px;
+  left:-0px;
+  }
+
+.site-box::after::after {
+    content: url("https://aace.nekoweb.org/accalia.dev/static/images/animate.gif");
+    position: absolute;
+    top:100px;
+    left:100px;
+    }
+
+.site-box > a > p:hover {
+  color: #68386c;
+  text-shadow: 0 0 4px #68386c;
+  transition: 1s;
+}
+
+.site-box:hover {
+    transform: rotate(1440deg);
+    transition: 0.5s;
+}
+
+
+.site-box > a > p {
+  color: #ff0044;
+  font-weight: bold;
+}
+.site-box > a > span {
+  color: #ff0044;
+}
+
+/* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
+/*.follow {
+}
