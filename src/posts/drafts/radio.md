@@ -4,6 +4,7 @@ title: you should like listen to the radio some more
 tags: ["thoughts"]
 description: a test on a blog post i want to make
 layout: blog.njk
+draft: true
 ---
 ## Radio Free Europe, and uh the rest of the globe i guess
 We all sorta let the algorithm guide our music experience (or a certain fucking music rating site) in the modern day and I kinda hate it? Unconventionally, I tried out the radio for the first time in what feels like forever. It seems like a bygone relic like the Compackt Diskc and the ye olde taype but its still kicking about. i dont know another person who still listens to the radio.<br>
