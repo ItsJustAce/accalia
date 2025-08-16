@@ -16,6 +16,7 @@ api-docs/
 # Ignore folders from source code editors
 .vscode
 .idea
+.zed
 
 # Ignore eleventy output when doing manual tests
 _site/
