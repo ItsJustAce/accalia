@@ -3,11 +3,11 @@ layout: layout.njk
 ---
 <p><a href="/blog/"> < back </a></p>
 <h1 style="text-align: center;"><i> {{ title }} </i></h1>
-<p>{{ date }} <br> {{ description }}</p>
+<p>Date: {{ date | date }} <br> Description: {{ description }}</p>
 
 <hr>
 
 {{ content | safe }}
 
 <hr>
-<p> {{ tags }} </p>
+<p>tags: {{ tags }} </p>
