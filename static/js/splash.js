@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "*Terms and conditions apply",
     "Made with ❤️ in HTML",
     "Running on Nekoweb 🚀",
-    "ADHD mode: enabled",
     "Also try accalia.dev!",
     "Sunrise, Parabellum!",
     "Damn fine coffee! 🌲☕",

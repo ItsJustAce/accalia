@@ -9,8 +9,12 @@
 main > div {
     padding: 12px;
     flex: 1 1 auto; /* fill available height */
-    flex-direction: column
-    display: flex;
+    flex-direction: column;
+}
+
+mark {
+    background-color: #c32454;
+    color: white;
 }
 
 img {
@@ -86,7 +90,6 @@ body {
     max-width: 1000px;
     background-color: #3e3546;
     height: 25px;
-
 }
 
 .footer p {
@@ -105,7 +108,8 @@ body {
     margin: 12px;
 }
 
-.post a:link, .post a:visited {
+.post a:link,
+.post a:visited {
     color: white;
 }
 
@@ -113,15 +117,18 @@ body {
     margin: auto;
     filter: drop-shadow(0px 0px);
     transform: translate(0px, 0px);
-    transition: transform 0.1s, filter 0.1s;
-
+    transition:
+        transform 0.1s,
+        filter 0.1s;
 }
 
 .post:hover {
     filter: drop-shadow(6px 6px);
 
     transform: translate(-6px, -6px);
-    transition: transform 0.1s, filter 0.1s;
+    transition:
+        transform 0.1s,
+        filter 0.1s;
 }
 
 .small {
@@ -148,8 +155,8 @@ body {
 }
 
 .container {
-  display: flex;
-  min-height: 100vh;  /* make the container full viewport height */
+    display: flex;
+    min-height: 100vh; /* make the container full viewport height */
 }
 
 .sl {
